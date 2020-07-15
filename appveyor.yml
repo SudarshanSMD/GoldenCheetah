@@ -49,6 +49,7 @@ init:
 - set PATH=%PATH%;E:\"Program Files (x86)"\NSIS
 
 cache:
+- E:\playground\github\GoldenCheetahBuildCache
 - gc-ci-libs.zip
 - jom_1_1_3.zip
 - sip-4.19.8.zip
