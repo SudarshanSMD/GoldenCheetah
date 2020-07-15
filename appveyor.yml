@@ -1,5 +1,6 @@
 version: ci.{build}
-image: Visual Studio 2019
+build_cloud: SMD
+image: Windows
 clone_depth: 1
 
 environment:
