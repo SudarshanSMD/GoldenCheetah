@@ -37,15 +37,16 @@ environment:
 
 init:
 # Setup QT 5.14 - 64Bit
-- set QTDIR=C:\Qt\5.14\msvc2017_64
+#- set QTDIR=C:\Qt\5.14\msvc2017_64
+- set QTDIR=E:\playground\Qt\5.15.0\msvc2015_64
 - set PATH=%QTDIR%\bin;%PATH%
 - qmake --version
 
 # Setup MSVC - VS 2019
-- call c:\"Program Files (x86)"\"Microsoft Visual Studio"\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64
+- call E:\"Program Files (x86)"\"Microsoft Visual Studio"\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64
 
 # Setup NSIS
-- set PATH=%PATH%;C:\"Program Files (x86)"\NSIS
+- set PATH=%PATH%;E:\"Program Files (x86)"\NSIS
 
 cache:
 - gc-ci-libs.zip
