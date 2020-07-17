@@ -860,7 +860,7 @@ void ANTChannel::broadcastEvent(unsigned char *ant_message)
                        if (sc_speed_active)
                            parent->setWheelRpm(rpm); // don't update if never received data on this channel (support S&C with single magnet)
                    }
-                   rpm = rpm * 1.5;
+                   rpm = rpm * 1.4;
                    value2 = rpm;
                }
            }
@@ -882,7 +882,7 @@ void ANTChannel::broadcastEvent(unsigned char *ant_message)
                    if (rpm < (float) 15.0)
                        rpm = 0.0; // if rpm is less than 15 (4s) then we consider that we are stopped
                }
-               rpm = rpm * 1.5;
+               rpm = rpm * 1.4;
                parent->setWheelRpm(rpm);
                value2=value=rpm;
            }
